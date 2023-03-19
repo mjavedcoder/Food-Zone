@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: darkred;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.header h1 {
+  padding-left: 200px;
+}
+
+.header button {
+  margin: 100px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.display-image {
+  width: 100%;
+  height: 25rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.display-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}
