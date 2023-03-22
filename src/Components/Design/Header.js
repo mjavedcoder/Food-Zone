@@ -8,7 +8,7 @@ function Header(props) {
     <>
       <header className={classes.header}>
         <h1>Food Zone</h1>
-        <HeaderButton />
+        <HeaderButton onClickCart={props.onCartVisible} />
       </header>
       <div className={classes["display-image"]}>
         <img src={zoneImg} alt="" />

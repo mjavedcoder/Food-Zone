@@ -11,7 +11,7 @@ function Cart(props) {
     </ul>
   );
   return (
-    <Window>
+    <Window onHide={props.onCartHide}>
       {" "}
       {cartlists}
       <div className={classes.total}>
@@ -19,7 +19,9 @@ function Cart(props) {
         <span>40.40</span>
       </div>
       <div className={classes.actions}>
-        <button className={classes.buttonAlt}>Close</button>
+        <button className={classes.buttonAlt} onClick={props.onCartHide}>
+          Close
+        </button>
         <button className={classes.button}>Order</button>
       </div>
     </Window>
