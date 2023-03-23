@@ -2,9 +2,10 @@ import React from "react";
 import { useContext } from "react";
 import classes from "./MealsList.module.css";
 import MealsListForm from "./MealsListForm";
-import { CartProvider } from "../../Vaulet/CartProvider";
+import { NameContext } from "../../Vaulet/CartProvider";
 
 function MealsList(props) {
+  const cartCtx = useContext(NameContext);
   const price = `£${props.price.toFixed(2)}`;
 
   const addToCartHandler = (amount) => {
@@ -15,7 +16,7 @@ function MealsList(props) {
       price: props.price,
     });
   };
-  const cartCtx = useContext(CartProvider);
+
   return (
     <li className={classes.meal}>
       <div>
