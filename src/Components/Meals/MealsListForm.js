@@ -11,7 +11,7 @@ function MealsListForm(props) {
     const enteredAmount = inputAmountRef.current.value;
     const enteredAmountNumber = +enteredAmount;
 
-    if (enteredAmount.trim().length || enteredAmount.length < 1) {
+    if (enteredAmount.trim() === "" || enteredAmountNumber < 1) {
       setAmountIsValid(false);
       return;
     }
