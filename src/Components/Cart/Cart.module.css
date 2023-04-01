@@ -45,3 +45,19 @@
   background-color: darkcyan;
   color: white;
 }
+
+.actions .button_close {
+  background-color: darkcyan;
+  color: white;
+}
+
+.actions .button_close:hover {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.color {
+  color: darkcyan;
+  font-weight: 800;
+  font-style: italic;
+}
